@@ -7,6 +7,7 @@ var style = {
 };
 
 s.click(function(e){
+	style.fill = randFill(1,6);
 	createCircle(e);
 });
 
@@ -25,7 +26,6 @@ function createCircle(e) {
 		circle.animate(circle.attr({stroke:'#eee'}), 500);
 		console.log('unhover');
 	});
-
 };
 
 function randFill(min,max) {
